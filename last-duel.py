@@ -63,7 +63,7 @@ def attack1(health2, name1):
     elif atq1 == 'axe':
         axe = random.randint(7,11)
         damage = random.randint(MIN_DAMAGE, MAX_DAMAGE)
-        if damage >= 50:
+        if damage >= 65:
             print("Miss...")
             return health2
         else:
@@ -73,7 +73,7 @@ def attack1(health2, name1):
     elif atq1 == 'bow':
         bow = random.randint(11,19)
         damage = random.randint(MIN_DAMAGE, MAX_DAMAGE)
-        if damage >= 18:
+        if damage >= 20:
             print("Miss... ")
             return health2
         else:
@@ -100,7 +100,7 @@ def attack2(health1, name2):
     elif atq2 == 'axe':
         axe = random.randint(7,11)
         damage = random.randint(MIN_DAMAGE, MAX_DAMAGE)
-        if damage >= 50:
+        if damage >= 65:
             print("Miss...")
             return health1
         else:
@@ -110,7 +110,7 @@ def attack2(health1, name2):
     elif atq2 == 'bow':
         bow = random.randint(11,19)
         damage = random.randint(MIN_DAMAGE, MAX_DAMAGE)
-        if damage >= 18:
+        if damage >= 20:
             print("Miss... ")
             return health1
         else:
