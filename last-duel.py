@@ -46,7 +46,7 @@ def main():
 #Defining amount of damage and miss chance for all the weapons
 def attack1(health2, name1):
     atq1 = input(name1 + " choose a weapon: ")
-    while atq1 not in ['sword', 'axe', 'bow']:
+    while atq1 not in ['sword', 'axe', 'bow', 'ugotpwnd']:
         print('Hey, choose a weapon among: sword, axe or bow')
         atq1 = input()
 #Sword mechanics
@@ -79,11 +79,16 @@ def attack1(health2, name1):
         else:
             print("You dealt " + str(bow) + " 🏹 damage. ")
             return health2 - bow
+#Cheats
+    elif atq1 == "ugotpwnd":
+        cheat = 99
+        print(name1 + " dealt 99 damage with a fireball! 🔥")
+        return health2 - cheat
 
 #Defining amount of damage and miss chance  for all the weapons
 def attack2(health1, name2):
     atq2 = input(name2 + " choose a weapon: ")
-    while atq2 not in ['sword', 'axe', 'bow']:
+    while atq2 not in ['sword', 'axe', 'bow', 'ugotpwnd']:
         print('Hey, choose a weapon among: sword, axe or bow')
         atq2 = input()
 #Sword mechanics
@@ -116,6 +121,12 @@ def attack2(health1, name2):
         else:
             print("You dealt " + str(bow) + " 🏹 damage. ")
             return health1 - bow
+#Cheats
+    elif atq2 == "ugotpwnd":
+        cheat = 99
+        print(name2 + " dealt 99 damage with a fireball! 🔥")
+        return health1 - cheat
+        
 
 if __name__ == '__main__':
     main()
