@@ -10,7 +10,7 @@ def main():
     print("-------------------------------------------------------------------")
     print("This game is for 2 players fighting each other, until one man left.") 
     print("Each player has 35 health at the start.")
-    print("There are 3 weapons to choose from: 'sword', 'axe' and a 'bow'.")
+    print("There are 3 weapons to choose from: 'sword', 'axe' and 'bow'.")
     print("Every weapon has its own damage and a miss chance.")
     print("You must type in one of the weapons to deal damage")
     print("-------------------------------------------------------------------")
